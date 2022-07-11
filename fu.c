@@ -71,27 +71,28 @@
 //	return 0;
 //}
 
-//int main()
-//{
-//	double n = 0;
-//	scanf("%lf", &n);
-//	int i = 0;
-//	double pi = 0.0;
-//	int a = 1;
-//	int b = 1;
-//	double sum = 1.0;
-//	while(sum >= n)
-//	{
-//		pi += sum;
-//		i++;
-//
-//		a *= i;
-//		b *= (2 * i + 1);
-//		sum = (double)a / (double)b;
-//	}
-//	printf("%lf", pi * 2);
-//	return 0;
-//}
+int main()
+{
+	double n = 0;
+	scanf("%lf", &n);
+
+	int i = 0;
+	double pi = 0.0;
+	int a = 1;
+	int b = 1;
+	double sum = 1.0;
+	while(sum >= n)
+	{
+		pi += sum;
+		i++;
+
+		a *= i;
+		b *= (2 * i + 1);
+		sum = (double)a / (double)b;
+	}
+	printf("%lf", pi * 2);
+	return 0;
+}
 
 //int main()
 //{
